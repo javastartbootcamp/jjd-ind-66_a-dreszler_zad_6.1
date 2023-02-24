@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number = 0;
-        do {
+        while (true) {
             System.out.println("Podaj liczbę");
             number = input.nextInt();
             if (number < 100) {
@@ -18,7 +18,8 @@ public class Main {
                 System.out.println("Podana liczba nie jest podzielna przez 3");
             } else {
                 System.out.println("Podana liczba jest ok :)");
+                break;
             }
-        } while (!(number >= 100 && number <= 200 && number % 3 == 0));
+        }
     }
 }
